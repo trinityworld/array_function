@@ -9,6 +9,7 @@ printf("enter the string..\n");
 scanf("%s",s);
 print_string(s);
 l=my-strlen(s);
+printf("l=%d\n",l);
 void print_string(const char *p)
 {
 while(*p)
@@ -19,4 +20,14 @@ p++;
 printf("\n");
 }
 }
-
+int my_strlen(char *p)
+{
+int c=0;
+while(*p)
+{
+c++;
+p++;
+}
+return c;
+}
+}
