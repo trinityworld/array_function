@@ -1,11 +1,14 @@
 #include<stdio.h>
 void print_string(const char*);
+int my_strlen(char*);
 void main()
 {
 char s[20];
+int l;
 printf("enter the string..\n");
 scanf("%s",s);
 print_string(s);
+l=my-strlen(s);
 void print_string(const char *p)
 {
 while(*p)
