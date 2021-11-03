@@ -1,12 +1,15 @@
 #include<stdio.h>
 void print_string(const char*);
 int my_strlen(char*);
+void my_strcpy(char*,char*);
 void main()
 {
-char s[20];
+char s[20],d[20];
 int l;
 printf("enter the string..\n");
 scanf("%s",s);
+my_strcpy(s,d);
+printf("s=%s,d=%s\n",s,d);
 print_string(s);
 l=my-strlen(s);
 void print_string(const char *p)
@@ -19,4 +22,14 @@ p++;
 printf("\n");
 }
 }
+void my_strcpy(char *s,char *p)
+{
+while(*s)
+{
+*p=*s;
+ s++;
+ p++;
+ }
+ }
+ 
 
